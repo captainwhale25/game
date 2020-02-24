@@ -35,8 +35,7 @@ let gameOptions = {
 }
 window.onload = function() {
 	
-	//Github fix?
-	this.load.baseURL = 'https://captainwhale25.github.io/game/';
+
 	
 	
     // game configuration object
@@ -63,6 +62,9 @@ class playGame extends Phaser.Scene{
         super("PlayGame");
     }
     preload(){
+	    	//Github fix?
+	this.load.baseURL = 'https://captainwhale25.github.io/game/';
+	    
         this.load.image("ground", "ground.png");
 		this.load.image('background', '/img/bg.png');
 		this.load.spritesheet('ball', '/img/balls.png', {
