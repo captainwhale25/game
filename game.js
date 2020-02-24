@@ -34,7 +34,11 @@ let gameOptions = {
     localStorageName: "bestballscore3"
 }
 window.onload = function() {
-
+	
+	//Github fix?
+	this.load.baseURL = 'https://captainwhale25.github.io/game/';
+	
+	
     // game configuration object
     let gameConfig = {
         type: Phaser.AUTO,
