@@ -62,8 +62,9 @@ class playGame extends Phaser.Scene{
         super("PlayGame");
     }
     preload(){
-	    	//Github fix?
-	     this.load.setBaseURL('https://captainwhale25.github.io/game/');
+	//Github fix?
+	//Comment out this line for offline testing. Must be active for github to load images correctly.
+	this.load.setBaseURL('https://captainwhale25.github.io/game/');
 	    
         this.load.image("ground", "ground.png");
 		this.load.image('background', '/img/bg.png');
